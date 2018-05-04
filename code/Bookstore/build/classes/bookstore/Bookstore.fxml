@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="960.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="bookstore.BookstoreController">
+  <children>
+    <Pane fx:id="bookpane" layoutX="0.0" layoutY="0.0" prefHeight="480.0" prefWidth="960.0" visible="true">
+      <children>
+        <TableView id="" fx:id="bookcase" disable="false" editable="false" focusTraversable="false" layoutX="0.0" layoutY="29.0" pickOnBounds="false" prefHeight="451.0391624999975" prefWidth="803.0" tableMenuButtonVisible="false">
+          <columns>
+            <TableColumn editable="false" id="" maxWidth="5000.0" minWidth="10.0" prefWidth="28.0" resizable="false" text="ID" fx:id="id" />
+            <TableColumn editable="false" id="" maxWidth="5000.0" minWidth="10.0" prefWidth="208.0" resizable="false" text="Title" fx:id="title" />
+            <TableColumn editable="false" id="" maxWidth="5000.0" minWidth="10.0" prefWidth="120.0" resizable="false" text="Author" fx:id="author" />
+            <TableColumn editable="false" id="" maxWidth="5000.0" minWidth="10.0" prefWidth="53.0" resizable="false" text="ISBN" fx:id="isbn" />
+            <TableColumn editable="false" id="" maxWidth="5000.0" minWidth="10.0" prefWidth="46.0" resizable="false" text="Price" fx:id="price" />
+            <TableColumn editable="false" id="" maxWidth="5000.0" minWidth="10.0" prefWidth="50.0" resizable="false" text="Stock" fx:id="stock" />
+            <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="103.0" resizable="false" text="Category" fx:id="category" />
+            <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="193.0" resizable="false" sortable="false" text="Actions" fx:id="action" />
+          </columns>
+        </TableView>
+        <TextField fx:id="titleSearch" focusTraversable="false" layoutX="28.0" layoutY="3.0" prefWidth="208.0" promptText="Search by title" />
+        <TextField id="authorSerach" fx:id="authorSearch" focusTraversable="false" layoutX="236.0" layoutY="3.0" prefWidth="120.0" promptText="Search by author" />
+        <TextField fx:id="categorySearch" focusTraversable="false" layoutX="587.0" layoutY="3.0" prefWidth="120.00009999999747" promptText="Search by category" />
+        <Button fx:id="view" layoutX="850.0" layoutY="83.0" mnemonicParsing="false" text="View Cart" />
+        <Button fx:id="addbook" layoutX="849.0" layoutY="126.0" mnemonicParsing="false" text="Add Book" />
+      </children>
+    </Pane>
+    <Pane fx:id="cartpane" layoutX="-7.0" layoutY="0.0" prefHeight="480.0" prefWidth="967.0" visible="false">
+      <children>
+        <TableView id="" fx:id="cart" disable="false" editable="false" focusTraversable="false" layoutX="7.0" layoutY="96.0" pickOnBounds="false" prefHeight="383.999977929685" prefWidth="820.0" tableMenuButtonVisible="false">
+          <columns>
+            <TableColumn editable="false" id="" maxWidth="5000.0" minWidth="10.0" prefWidth="283.0" resizable="false" text="Title" fx:id="cartTitle" />
+            <TableColumn editable="false" id="" maxWidth="5000.0" minWidth="10.0" prefWidth="153.0" resizable="false" text="Author" fx:id="cartAuthor" />
+            <TableColumn editable="false" id="" maxWidth="5000.0" minWidth="10.0" prefWidth="94.0" resizable="false" text="Price" fx:id="cartPrice" />
+            <TableColumn editable="false" id="" maxWidth="5000.0" minWidth="10.0" prefWidth="73.0" resizable="false" text="Amount" fx:id="cartAmount" />
+            <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="89.0" resizable="false" text="Subtotal" fx:id="cartSubtotal" />
+            <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="128.0" resizable="false" text="Action" fx:id="cartAction" />
+          </columns>
+        </TableView>
+        <Label layoutX="54.0" layoutY="33.0" text="Your cart">
+          <font>
+            <Font name="Arial" size="24.0" />
+          </font>
+        </Label>
+        <Button fx:id="checkout" layoutX="862.0" layoutY="195.0" mnemonicParsing="false" text="Checkout" />
+        <Button fx:id="back" layoutX="875.0" layoutY="288.0" mnemonicParsing="false" text="Back" />
+        <Button id="back" fx:id="clear" layoutX="874.0" layoutY="240.0" mnemonicParsing="false" text="Clear" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
