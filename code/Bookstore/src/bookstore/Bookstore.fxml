@@ -25,7 +25,7 @@
         </TableView>
         <TextField fx:id="titleSearch" focusTraversable="false" layoutX="28.0" layoutY="3.0" prefWidth="208.0" promptText="Search by title" />
         <TextField id="authorSerach" fx:id="authorSearch" focusTraversable="false" layoutX="236.0" layoutY="3.0" prefWidth="120.0" promptText="Search by author" />
-        <TextField fx:id="categorySearch" focusTraversable="false" layoutX="587.0" layoutY="3.0" prefWidth="120.00009999999747" promptText="Search by category" />
+        <TextField fx:id="categorySearch" focusTraversable="false" layoutX="504.0" layoutY="3.0" prefWidth="105.00009999999747" promptText="Search by category" />
         <Button fx:id="view" layoutX="850.0" layoutY="83.0" mnemonicParsing="false" text="View Cart" />
         <Button fx:id="addbook" layoutX="849.0" layoutY="126.0" mnemonicParsing="false" text="Add Book" />
       </children>
